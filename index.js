@@ -25,7 +25,7 @@ function HDWalletProvider(
 ) {
   this.mnemonic = mnemonic;
   this.hdwallet = hdkey.fromMasterSeed(bip39.mnemonicToSeed(mnemonic));
-  this.wallet_hdpath = "m/44'/" + chainId + "'/0'/0/";
+  this.wallet_hdpath = `m/44'/${chainId}'/0'/0/`;
   this.wallets = {};
   this.addresses = [];
 
